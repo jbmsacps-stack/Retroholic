@@ -1,4 +1,4 @@
-:root{
+﻿:root{
 
 --bg:#0d0d0d;
 
@@ -1013,3 +1013,70 @@ gap:40px;
     top:24px;
 }
 
+.game-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,190px);
+
+    justify-content:space-between;
+
+    row-gap:8px;
+
+    overflow:visible;
+
+}
+
+.game-card{
+
+    position:relative;
+
+    overflow:visible;
+
+    z-index:1;
+
+}
+
+.game-card:hover{
+
+    z-index:100;
+
+}
+
+.main-content{
+
+    overflow:visible;
+
+}
+
+.content{
+
+    overflow:visible;
+
+}
+
+.game-card{
+
+    position:relative;
+
+    width:190px;
+
+    height:250px;      /* cartridge height only */
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    background:none;
+
+    border:none;
+
+    overflow:visible;
+
+    cursor:pointer;
+
+    z-index:1;
+
+}
