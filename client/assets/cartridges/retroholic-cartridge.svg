@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420" height="540" viewBox="0 0 420 540"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#A9A9A9"/>
+    <stop offset="100%" stop-color="#707070"/>
+</linearGradient>
+
+<linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#DADADA"/>
+    <stop offset="100%" stop-color="#9C9C9C"/>
+</linearGradient>
+
+<linearGradient id="shadow" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#5D5D5D"/>
+    <stop offset="50%" stop-color="#888"/>
+    <stop offset="100%" stop-color="#5D5D5D"/>
+</linearGradient>
+
+</defs>
+
+<!-- MAIN BODY -->
+
+<path d="
+M85 28
+L335 28
+Q355 28 355 48
+L355 485
+Q355 510 330 510
+L90 510
+Q65 510 65 485
+L65 48
+Q65 28 85 28
+Z"
+
+fill="url(#shell)"
+stroke="#4B4B4B"
+stroke-width="4"/>
+
+<!-- TOP PANEL -->
+
+<path d="
+M105 28
+L315 28
+Q335 28 335 44
+L335 92
+L85 92
+L85 44
+Q85 28 105 28
+Z"
+
+fill="url(#top)"
+stroke="#777"
+stroke-width="2"/>
+
+<!-- SIDE GROOVES -->
+
+<g fill="#5F5F5F">
+
+<rect x="65" y="105" width="8" height="250"/>
+<rect x="347" y="105" width="8" height="250"/>
+
+<rect x="65" y="375" width="8" height="90"/>
+<rect x="347" y="375" width="8" height="90"/>
+
+</g>
+
+<!-- LABEL FRAME -->
+
+<rect
+
+x="92"
+
+y="112"
+
+width="236"
+
+height="220"
+
+rx="5"
+
+fill="#222"
+
+stroke="#575757"
+
+stroke-width="3"/>
+
+<!-- TRANSPARENT LABEL WINDOW -->
+
+<rect
+
+x="100"
+
+y="120"
+
+width="220"
+
+height="204"
+
+rx="3"
+
+fill="none"
+
+stroke="#AAAAAA"
+
+stroke-width="1"
+
+opacity=".25"/>
+
+<!-- SIDE BEVELS -->
+
+<polygon points="65,110 82,130 82,320 65,340"
+fill="#6B6B6B"/>
+
+<polygon points="355,110 338,130 338,320 355,340"
+fill="#6B6B6B"/>
+
+<!-- LOWER PANEL -->
+
+<rect
+
+x="92"
+
+y="356"
+
+width="236"
+
+height="82"
+
+rx="4"
+
+fill="#6E6E6E"
+
+stroke="#5A5A5A"
+
+stroke-width="2"/>
+
+<!-- RETROHOLIC -->
+
+<text
+
+x="210"
+
+y="405"
+
+text-anchor="middle"
+
+font-family="Arial"
+
+font-size="22"
+
+font-weight="bold"
+
+letter-spacing="4"
+
+fill="#8D8D8D">
+
+RETROHOLIC
+
+</text>
+
+<!-- GRIP -->
+
+<rect
+
+x="145"
+
+y="458"
+
+width="130"
+
+height="18"
+
+rx="9"
+
+fill="url(#shadow)"/>
+
+<!-- SCREWS -->
+
+<g>
+
+<circle cx="100" cy="60" r="5" fill="#666"/>
+<circle cx="320" cy="60" r="5" fill="#666"/>
+
+<circle cx="100" cy="470" r="5" fill="#666"/>
+<circle cx="320" cy="470" r="5" fill="#666"/>
+
+<line x1="96" y1="60" x2="104" y2="60"
+stroke="#333" stroke-width="2"/>
+
+<line x1="320" y1="56" x2="320" y2="64"
+stroke="#333" stroke-width="2"/>
+
+<line x1="96" y1="470" x2="104" y2="470"
+stroke="#333" stroke-width="2"/>
+
+<line x1="320" y1="466" x2="320" y2="474"
+stroke="#333" stroke-width="2"/>
+
+</g>
+
+<!-- TOP RIDGES -->
+
+<g stroke="#7A7A7A" stroke-width="2">
+
+<line x1="110" y1="48" x2="310" y2="48"/>
+
+<line x1="110" y1="60" x2="310" y2="60"/>
+
+<line x1="110" y1="72" x2="310" y2="72"/>
+
+</g>
+
+</svg>

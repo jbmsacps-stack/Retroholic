@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420" height="90" viewBox="0 0 420 90"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+
+        <linearGradient id="slotBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2b2b2b"/>
+            <stop offset="100%" stop-color="#141414"/>
+        </linearGradient>
+
+        <linearGradient id="slotLip" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#555"/>
+            <stop offset="100%" stop-color="#333"/>
+        </linearGradient>
+
+    </defs>
+
+    <!-- Outer Body -->
+
+    <rect
+        x="10"
+        y="22"
+        width="400"
+        height="52"
+        rx="4"
+        fill="url(#slotBody)"
+        stroke="#3a3a3a"
+        stroke-width="3"/>
+
+    <!-- Top Lip -->
+
+    <rect
+        x="18"
+        y="18"
+        width="384"
+        height="12"
+        rx="2"
+        fill="url(#slotLip)"
+    />
+
+    <!-- Cartridge Opening -->
+
+    <rect
+        x="28"
+        y="28"
+        width="364"
+        height="20"
+        rx="2"
+        fill="#090909"
+    />
+
+    <!-- Inner Shadow -->
+
+    <rect
+        x="34"
+        y="31"
+        width="352"
+        height="14"
+        fill="#000"
+        opacity=".55"
+    />
+
+    <!-- Left Screw -->
+
+    <circle
+        cx="32"
+        cy="60"
+        r="6"
+        fill="#666"/>
+
+    <line
+        x1="28"
+        y1="60"
+        x2="36"
+        y2="60"
+        stroke="#2b2b2b"
+        stroke-width="2"/>
+
+    <!-- Right Screw -->
+
+    <circle
+        cx="388"
+        cy="60"
+        r="6"
+        fill="#666"/>
+
+    <line
+        x1="384"
+        y1="60"
+        x2="392"
+        y2="60"
+        stroke="#2b2b2b"
+        stroke-width="2"/>
+
+    <!-- Vent Lines -->
+
+    <g stroke="#3d3d3d" stroke-width="2">
+
+        <line x1="90" y1="58" x2="120" y2="58"/>
+        <line x1="130" y1="58" x2="160" y2="58"/>
+        <line x1="170" y1="58" x2="200" y2="58"/>
+        <line x1="220" y1="58" x2="250" y2="58"/>
+        <line x1="260" y1="58" x2="290" y2="58"/>
+        <line x1="300" y1="58" x2="330" y2="58"/>
+
+    </g>
+
+</svg>

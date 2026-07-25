@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= NAVBAR ================= -->
+
+        <header class="navbar">
+
+            <div class="logo">
+                <span>■</span> RETROHOLIC
+            </div>
+
+            <nav class="nav-links">
+
+                <a href="#" class="active">HOME</a>
+                <a href="#">GAMES</a>
+                <a href="#">TOP SCORE</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+
+            </nav>
+
+            <div class="login-btn">
+                LOGIN
+            </div>
+
+        </header>
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="content">
+
+            <!-- Sidebar -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-home">
+                    🏠 HOME
+                </div>
+
+                <div class="genre-heading">
+                    GENRES
+                </div>
+
+                <div class="genre-list">
+
+                    <div class="genre-item active">Arcade</div>
+
+                    <div class="genre-item">Platformer</div>
+
+                    <div class="genre-item">Puzzle</div>
+
+                    <div class="genre-item">Shooter</div>
+
+                    <div class="genre-item">Racing</div>
+
+                    <div class="genre-item">RPG</div>
+
+                    <div class="genre-item">Sports</div>
+
+                </div>
+
+            </aside>
+
+            <!-- Main -->
+
+            <main class="main-content">
+
+                <div class="toolbar">
+
+                    <input type="text" placeholder="Search games..." class="search">
+
+                    <div class="sort-buttons">
+                        <button class="active">Newest</button>
+                        <button>Popular</button>
+                        <button>Top Score</button>
+                    </div>
+
+                </div>
+
+                <div class="game-grid">
+
+                    <div class="game-card">
+
+                        <div class="slot">
+                            <img src="assets/cartridges/slot.svg" alt="">
+                        </div>
+
+                        <div class="cartridge">
+
+                            <img class="label" src="assets/labels/mario.webp" alt="">
+
+                            <img class="frame" src="assets/cartridges/retroholic-frame.svg" alt="">
+
+                        </div>
+
+                        <div class="game-info">
+
+                            <h3>SUPER MARIO</h3>
+
+                            <div class="meta">
+
+                                <span>★★★★★</span>
+
+                                <span>1.2M</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="game-card"></div>
+                    <div class="game-card"></div>
+                    <div class="game-card"></div>
+                    <div class="game-card"></div>
+                    <div class="game-card"></div>
+                    <div class="game-card"></div>
+                    <div class="game-card"></div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
