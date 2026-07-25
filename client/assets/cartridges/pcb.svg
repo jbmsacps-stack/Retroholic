@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="340" height="180" viewBox="0 0 340 180"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#143826"/>
+<stop offset="100%" stop-color="#0b2016"/>
+</linearGradient>
+
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#e0c060"/>
+<stop offset="100%" stop-color="#b5871b"/>
+</linearGradient>
+
+</defs>
+
+<!-- Board -->
+
+<rect
+x="3"
+y="3"
+width="334"
+height="174"
+rx="4"
+fill="url(#board)"
+stroke="#08150d"
+stroke-width="3"/>
+
+<!-- LEFT TRACES -->
+
+<g stroke="#2a8b53" stroke-width="2" opacity=".22" fill="none">
+
+<path d="M22 18 V60 H54"/>
+<path d="M40 18 V100 H70"/>
+<path d="M60 18 V138 H86"/>
+
+<path d="M22 82 H76"/>
+<path d="M22 118 H90"/>
+
+</g>
+
+<!-- RIGHT TRACES -->
+
+<g stroke="#2a8b53" stroke-width="2" opacity=".22" fill="none">
+
+<path d="M318 18 V60 H286"/>
+<path d="M300 18 V100 H268"/>
+<path d="M280 18 V138 H252"/>
+
+<path d="M264 82 H318"/>
+<path d="M248 118 H318"/>
+
+</g>
+
+<!-- TOP TRACES -->
+
+<g stroke="#38b46b" stroke-width="2" opacity=".16">
+
+<line x1="90" y1="24" x2="250" y2="24"/>
+<line x1="90" y1="36" x2="250" y2="36"/>
+
+</g>
+
+<!-- BOTTOM TRACES -->
+
+<g stroke="#38b46b" stroke-width="2" opacity=".16">
+
+<line x1="90" y1="134" x2="250" y2="134"/>
+<line x1="90" y1="146" x2="250" y2="146"/>
+
+</g>
+
+<!-- VIA HOLES -->
+
+<g fill="#4bb870" opacity=".45">
+
+<circle cx="54" cy="60" r="2"/>
+<circle cx="70" cy="100" r="2"/>
+<circle cx="86" cy="138" r="2"/>
+
+<circle cx="286" cy="60" r="2"/>
+<circle cx="268" cy="100" r="2"/>
+<circle cx="252" cy="138" r="2"/>
+
+</g>
+
+<!-- GOLD FINGERS -->
+
+<g fill="url(#gold)">
+
+<rect x="18" y="156" width="8" height="18"/>
+<rect x="30" y="156" width="8" height="18"/>
+<rect x="42" y="156" width="8" height="18"/>
+<rect x="54" y="156" width="8" height="18"/>
+<rect x="66" y="156" width="8" height="18"/>
+<rect x="78" y="156" width="8" height="18"/>
+<rect x="90" y="156" width="8" height="18"/>
+<rect x="102" y="156" width="8" height="18"/>
+<rect x="114" y="156" width="8" height="18"/>
+<rect x="126" y="156" width="8" height="18"/>
+<rect x="138" y="156" width="8" height="18"/>
+<rect x="150" y="156" width="8" height="18"/>
+<rect x="162" y="156" width="8" height="18"/>
+<rect x="174" y="156" width="8" height="18"/>
+<rect x="186" y="156" width="8" height="18"/>
+<rect x="198" y="156" width="8" height="18"/>
+<rect x="210" y="156" width="8" height="18"/>
+<rect x="222" y="156" width="8" height="18"/>
+<rect x="234" y="156" width="8" height="18"/>
+<rect x="246" y="156" width="8" height="18"/>
+<rect x="258" y="156" width="8" height="18"/>
+<rect x="270" y="156" width="8" height="18"/>
+<rect x="282" y="156" width="8" height="18"/>
+<rect x="294" y="156" width="8" height="18"/>
+<rect x="306" y="156" width="8" height="18"/>
+
+</g>
+
+</svg>
