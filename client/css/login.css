@@ -1,0 +1,508 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"VT323", monospace;
+    background:#090909;
+    color:#fff;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.login-page{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+        radial-gradient(circle at center,#181818 0%,#090909 75%);
+
+    z-index:-2;
+
+}
+
+.background::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+    repeating-linear-gradient(
+        transparent 0px,
+        transparent 3px,
+        rgba(255,255,255,.03) 4px
+    );
+
+    opacity:.35;
+
+    animation:scan 8s linear infinite;
+
+}
+
+@keyframes scan{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(8px);
+    }
+
+}
+
+/* =========================
+   LOGIN PANEL
+========================= */
+
+.login-container{
+
+    width:680px;
+
+    max-width:92vw;
+
+    padding:32px 40px;
+
+    background:#111;
+
+    border:2px solid #444;
+
+    box-shadow:
+        inset 0 0 0 2px #1f1f1f,
+        0 0 30px rgba(0,0,0,.55);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.logo span{
+
+    color:#ff4040;
+
+    font-size:22px;
+
+}
+
+.logo h1{
+
+    font-family:"Press Start 2P";
+
+    font-size:24px;
+
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle{
+
+    margin-bottom:30px;
+
+    font-size:30px;
+
+    color:#cfcfcf;
+
+}
+
+/* =========================
+   CLERK
+========================= */
+
+#clerk-sign-in{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* =========================
+   CLERK OVERRIDES
+========================= */
+
+.cl-rootBox{
+
+    width:100%!important;
+
+    display:flex!important;
+
+    justify-content:center!important;
+
+}
+
+.cl-card{
+
+    width:520px!important;
+
+    max-width:100%!important;
+
+    background:#181818!important;
+
+    border:2px solid #444!important;
+
+    box-shadow:none!important;
+
+    border-radius:0!important;
+
+    padding:26px!important;
+
+}
+
+.cl-headerTitle{
+
+    font-family:"Press Start 2P"!important;
+
+    font-size:18px!important;
+
+    color:#fff!important;
+
+}
+
+.cl-headerSubtitle{
+
+    font-family:"VT323"!important;
+
+    font-size:24px!important;
+
+    color:#cfcfcf!important;
+
+}
+
+.cl-socialButtonsBlockButton{
+
+    background:#202020!important;
+
+    border:2px solid #444!important;
+
+    border-radius:0!important;
+
+}
+
+.cl-socialButtonsBlockButton:hover{
+
+    border-color:#ff4040!important;
+
+}
+
+.cl-formFieldLabel{
+
+    font-family:"VT323"!important;
+
+    font-size:24px!important;
+
+    color:#ddd!important;
+
+}
+
+.cl-formFieldInput{
+
+    background:#111!important;
+
+    border:2px solid #555!important;
+
+    color:#fff!important;
+
+    border-radius:0!important;
+
+    height:52px!important;
+
+    font-size:18px!important;
+
+}
+
+.cl-formButtonPrimary{
+
+    background:#ff4040!important;
+
+    border:none!important;
+
+    border-radius:0!important;
+
+    height:52px!important;
+
+    font-family:"Silkscreen"!important;
+
+}
+
+.cl-footer{
+
+    background:transparent!important;
+
+}
+
+.cl-footerActionText,
+.cl-footerActionLink{
+
+    color:#cfcfcf!important;
+
+}
+
+.cl-footerActionLink{
+
+    color:#ff4040!important;
+
+}
+
+.logo{
+    margin-bottom:14px;
+}
+
+.subtitle{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+#clerk-sign-in{
+    margin-top:10px;
+}
+
+.cl-socialButtonsBlockButton{
+
+    background:#202020!important;
+
+    border:2px solid #444!important;
+
+    color:#fff!important;
+
+}
+
+.cl-socialButtonsBlockButton span{
+
+    color:#fff!important;
+
+}
+
+.cl-socialButtonsBlockButton svg{
+
+    opacity:1!important;
+
+}
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:100%;
+
+    margin:18px 0 12px;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#333;
+
+}
+
+.divider span{
+
+    color:#777;
+
+    font-family:"VT323";
+
+    font-size:22px;
+
+}
+
+.signup-link{
+
+    display:inline-block;
+
+    color:#ff4040;
+
+    text-decoration:none;
+
+    font-family:"Silkscreen";
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    transition:.2s;
+
+}
+
+.signup-link:hover{
+
+    color:#fff;
+
+    text-shadow:0 0 8px #ff4040;
+
+}
+
+.login-page{
+
+    min-height:100vh;
+
+}
+
+.cl-card{
+
+    padding:22px!important;
+
+}
+
+/* ===== INPUT PLACEHOLDER ===== */
+
+.cl-formFieldInput::placeholder{
+
+    color:#9d9d9d!important;
+
+    opacity:1!important;
+
+    font-family:"VT323"!important;
+
+    font-size:22px!important;
+
+    letter-spacing:.5px;
+
+}
+
+.cl-formFieldInput{
+
+    color:#ffffff!important;
+
+    font-size:22px!important;
+
+    font-family:"VT323"!important;
+
+}
+
+/* Focus */
+
+.cl-formFieldInput:focus{
+
+    border-color:#ff4040!important;
+
+    box-shadow:
+        0 0 0 1px #ff4040 inset,
+        0 0 12px rgba(255,64,64,.35)!important;
+
+}
+
+/* Labels */
+
+.cl-formFieldLabel{
+
+    color:#f0f0f0!important;
+
+    font-family:"Silkscreen"!important;
+
+    font-size:13px!important;
+
+    margin-bottom:8px!important;
+
+    letter-spacing:1px;
+
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.cl-socialButtonsBlockButton{
+
+    background:#202020!important;
+
+    border:2px solid #444!important;
+
+    border-radius:0!important;
+
+    color:#fff!important;
+
+    transition:.2s;
+
+}
+
+.cl-socialButtonsBlockButton:hover{
+
+    border-color:#ff4040!important;
+
+    background:#282828!important;
+
+}
+
+/* Keep text white */
+
+.cl-socialButtonsBlockButton span{
+
+    color:#fff!important;
+
+}
+
+/* DON'T force SVG fill */
+
+.cl-socialButtonsBlockButton svg{
+
+    opacity:1!important;
+
+    filter:none!important;
+
+}
+
+/* GitHub logo specifically */
+
+.cl-socialButtonsBlockButton svg path{
+
+    fill:currentColor!important;
+
+}

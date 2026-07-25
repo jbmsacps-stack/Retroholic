@@ -1,0 +1,63 @@
+/* ===========================
+        NAV RIGHT
+=========================== */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+/* ===========================
+       UPLOAD BUTTON
+=========================== */
+
+.upload-btn{
+
+    padding:12px 20px;
+
+    background:var(--primary);
+
+    border:2px solid #ff6b6b;
+
+    color:#fff;
+
+    font-family:'Silkscreen';
+
+    font-size:13px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.15),
+        0 4px 12px rgba(230,57,70,.25);
+
+}
+
+.upload-btn:hover{
+
+    background:#ff4d5d;
+
+    transform:translateY(-2px);
+
+}
+
+/* Active Link */
+
+.nav-links .active{
+
+    color:#fff;
+
+}
+
+.nav-links .active::after{
+
+    width:100%;
+
+}

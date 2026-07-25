@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic | Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <span>■</span>
+
+            RETROHOLIC
+
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">HOME</a>
+
+            <a href="#">GAMES</a>
+
+            <a href="#">TOP SCORE</a>
+
+            <a href="#">ABOUT</a>
+
+            <a href="#">CONTACT</a>
+
+        </nav>
+
+        <div id="nav-auth"></div>
+
+    </header>
+
+    <!-- ================= PROFILE HERO ================= -->
+
+    <section class="profile-hero">
+
+        <div class="profile-avatar">
+
+            <img id="profile-avatar">
+
+        </div>
+
+        <div class="profile-info">
+
+            <h1 id="profile-name">
+
+                PLAYER
+
+            </h1>
+
+            <p id="profile-username">
+
+                @username
+
+            </p>
+
+            <p id="profile-bio">
+
+                No bio yet.
+
+            </p>
+
+            <span id="joined-date">
+
+                Joined Retroholic
+
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <h2 id="games-count">0</h2>
+
+            <span>UPLOADS</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="downloads-count">0</h2>
+
+            <span>DOWNLOADS</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="likes-count">0</h2>
+
+            <span>LIKES</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="followers-count">0</h2>
+
+            <span>FOLLOWERS</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ACTIONS ================= -->
+
+    <section class="profile-actions">
+
+        <a href="upload.html" class="action-btn">
+
+            UPLOAD GAME
+
+        </a>
+
+        <a href="profile-setup.html" class="action-btn">
+
+            EDIT PROFILE
+
+        </a>
+
+        <button class="action-btn" id="logout-btn">
+
+            LOGOUT
+
+        </button>
+
+    </section>
+
+    <!-- ================= MY GAMES ================= -->
+
+    <section class="my-games">
+
+        <div class="section-title">
+
+            MY GAMES
+
+        </div>
+
+        <div id="games-grid" class="games-grid">
+
+            <div class="empty-games">
+
+                <div class="empty-icon">
+
+                    🎮
+
+                </div>
+
+                <h2>
+
+                    No Games Yet
+
+                </h2>
+
+                <p>
+
+                    Upload your first game and start building your collection.
+
+                </p>
+
+                <a href="upload.html" class="upload-first">
+
+                    UPLOAD FIRST GAME
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+
+<script type="module" src="js/profile.js"></script>
+
+</body>
+
+</html>

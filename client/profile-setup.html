@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic | Edit Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/profile-setup.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- NAVBAR -->
+
+        <header class="navbar">
+
+            <div class="logo">
+
+                <span>■</span> RETROHOLIC
+
+            </div>
+
+            <nav class="nav-links">
+
+                <a href="index.html">HOME</a>
+
+                <a href="#">GAMES</a>
+
+                <a href="#">TOP SCORE</a>
+
+                <a href="#">ABOUT</a>
+
+                <a href="#">CONTACT</a>
+
+            </nav>
+
+            <div id="nav-auth"></div>
+
+        </header>
+
+
+
+        <!-- PROFILE -->
+
+        <section class="profile-editor">
+
+            <div class="editor-header">
+
+                <h1>PLAYER PROFILE</h1>
+
+                <button class="save-btn">
+
+                    SAVE PROFILE
+
+                </button>
+
+            </div>
+
+
+
+            <div class="editor-body">
+
+
+
+                <!-- LEFT -->
+
+                <aside class="profile-left">
+
+                    <div class="avatar-frame">
+
+                        <img id="avatar-preview">
+
+                    </div>
+
+                    <button id="change-avatar">
+
+                        CHANGE PHOTO
+
+                    </button>
+
+                    <button class="danger">
+
+                        REMOVE PHOTO
+
+                    </button>
+
+                </aside>
+
+
+
+                <!-- RIGHT -->
+
+                <div class="profile-right">
+
+                    <div class="field">
+
+                        <label>DISPLAY NAME</label>
+
+                        <input type="text" id="display-name" maxlength="30" placeholder="PLAYER NAME">
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>USERNAME</label>
+
+                        <input type="text" id="username" maxlength="20" placeholder="USERNAME">
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>BIO</label>
+
+                        <textarea id="bio" maxlength="160" placeholder="TELL PLAYERS ABOUT YOURSELF"></textarea>
+
+                    </div>
+
+
+
+                    <h2>SOCIAL LINKS</h2>
+
+
+
+                    <div class="field">
+
+                        <label>GITHUB</label>
+
+                        <input type="url" id="github">
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>WEBSITE</label>
+
+                        <input type="url" id="website">
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>YOUTUBE</label>
+
+                        <input type="url" id="youtube">
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>DISCORD</label>
+
+                        <input type="text" id="discord">
+
+                    </div>
+
+
+
+                    <h2>FAVORITE GENRES</h2>
+
+
+
+                    <div class="genre-grid">
+
+                        <button type="button">Arcade</button>
+                        <button type="button">Platformer</button>
+                        <button type="button">Puzzle</button>
+                        <button type="button">Shooter</button>
+                        <button type="button">RPG</button>
+                        <button type="button">Racing</button>
+                        <button type="button">Sports</button>
+                        <button type="button">Strategy</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script type="module" src="js/profile-setup.js"></script>
+
+</body>
+
+</html>

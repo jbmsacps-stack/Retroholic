@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic | Upload Game</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= NAVBAR ================= -->
+
+        <!-- ===========================
+            NAVBAR
+=========================== -->
+
+        <header class="navbar">
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+
+                <span>■</span>
+
+                RETROHOLIC
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-links">
+
+                <a href="index.html">HOME</a>
+
+                <a href="games.html">GAMES</a>
+
+                <a href="upload.html" class="active">UPLOAD</a>
+
+                <a href="leaderboard.html">TOP SCORE</a>
+
+                <a href="about.html">ABOUT</a>
+
+                <a href="contact.html">CONTACT</a>
+
+            </nav>
+
+
+            <!-- Right Side -->
+
+            <div class="nav-right">
+
+                <button class="upload-btn">
+
+                    + UPLOAD
+
+                </button>
+
+                <button class="login-btn">
+
+                    LOGIN
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <main class="upload-page">
+
+            <!-- HEADER -->
+
+            <section class="upload-hero">
+
+                <h1>UPLOAD GAME</h1>
+
+                <p>
+                    Publish your HTML5 retro game to Retroholic.
+                </p>
+
+            </section>
+
+
+            <!-- PROGRESS -->
+
+            <section class="upload-progress">
+
+                <div class="progress-step active">
+
+                    <div class="circle">1</div>
+
+                    <span>Game</span>
+
+                </div>
+
+                <div class="progress-line"></div>
+
+                <div class="progress-step">
+
+                    <div class="circle">2</div>
+
+                    <span>Artwork</span>
+
+                </div>
+
+                <div class="progress-line"></div>
+
+                <div class="progress-step">
+
+                    <div class="circle">3</div>
+
+                    <span>Details</span>
+
+                </div>
+
+                <div class="progress-line"></div>
+
+                <div class="progress-step">
+
+                    <div class="circle">4</div>
+
+                    <span>Publish</span>
+
+                </div>
+
+            </section>
+
+
+            <!-- BODY -->
+
+            <section class="upload-layout">
+
+
+                <!-- LEFT -->
+
+                <div class="upload-main">
+
+
+                    <!-- STEP 1 -->
+
+                    <div class="upload-panel">
+
+                        <h2>Game Files</h2>
+
+                        <p class="panel-subtitle">
+                            Upload your HTML5 game build.
+                        </p>
+
+
+                        <label class="drop-zone">
+
+                            <input type="file" id="gameZip" accept=".zip" hidden>
+
+                            <div class="drop-icon">
+
+                                📦
+
+                            </div>
+
+                            <h3>Drag & Drop ZIP</h3>
+
+                            <p>or click to browse</p>
+
+                        </label>
+
+
+                        <div class="requirements">
+
+                            <h3>Requirements</h3>
+
+                            <ul>
+
+                                <li>✔ HTML5 Game</li>
+
+                                <li>✔ index.html required</li>
+
+                                <li>✔ Maximum 100 MB</li>
+
+                                <li>✔ ZIP format only</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- STEP 2 -->
+
+                    <div class="upload-panel">
+
+                        <h2>Artwork</h2>
+
+                        <p class="panel-subtitle">
+
+                            Upload images for your game.
+
+                        </p>
+
+
+                        <div class="upload-grid">
+
+                            <label class="image-upload">
+
+                                <input type="file" hidden>
+
+                                <span>Cartridge Label</span>
+
+                            </label>
+
+
+                            <label class="image-upload">
+
+                                <input type="file" hidden>
+
+                                <span>Banner</span>
+
+                            </label>
+
+
+                            <label class="image-upload">
+
+                                <input type="file" hidden>
+
+                                <span>Screenshots</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- STEP 3 -->
+
+                    <div class="upload-panel">
+
+                        <h2>Game Details</h2>
+
+                        <p class="panel-subtitle">
+
+                            Tell players about your game.
+
+                        </p>
+
+
+                        <div class="form-grid">
+
+                            <input type="text" placeholder="Game Title">
+
+                            <input type="number" placeholder="Release Year">
+
+                            <select>
+
+                                <option>Genre</option>
+
+                                <option>Platformer</option>
+
+                                <option>Shooter</option>
+
+                                <option>Puzzle</option>
+
+                                <option>RPG</option>
+
+                            </select>
+
+                            <input type="text" placeholder="Tags">
+
+                        </div>
+
+
+                        <textarea rows="7" placeholder="Game Description..."></textarea>
+
+                    </div>
+
+
+
+                    <!-- STEP 4 -->
+
+                    <div class="upload-panel">
+
+                        <h2>Publish</h2>
+
+                        <p class="panel-subtitle">
+
+                            Review your submission.
+
+                        </p>
+
+                        <div class="publish-actions">
+
+                            <button class="secondary-btn">
+
+                                Save Draft
+
+                            </button>
+
+                            <button class="primary-btn">
+
+                                Publish Game
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT -->
+
+                <aside class="upload-sidebar">
+
+                    <div class="preview-card">
+
+                        <h3>Preview</h3>
+
+                        <div class="preview-cartridge">
+
+                            Cartridge Preview
+
+                        </div>
+
+                        <h4>Game Title</h4>
+
+                        <p>Genre • Year</p>
+
+                    </div>
+
+
+
+                    <div class="tips-card">
+
+                        <h3>Publishing Tips</h3>
+
+                        <ul>
+
+                            <li>✔ Use a high-quality cover.</li>
+
+                            <li>✔ Add screenshots.</li>
+
+                            <li>✔ Explain the controls.</li>
+
+                            <li>✔ Test your ZIP before uploading.</li>
+
+                        </ul>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    </div>
+
+    <script src="js/upload.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

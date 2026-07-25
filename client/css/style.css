@@ -1080,3 +1080,281 @@ gap:40px;
     z-index:1;
 
 }
+
+/* =========================
+   NAV PROFILE
+========================= */
+
+.nav-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:185px;
+
+    height:62px;
+
+    padding:0 16px;
+
+    background:#1b1b1b;
+
+    border:2px solid #444;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.nav-profile:hover{
+
+    border-color:#ff4040;
+
+    background:#232323;
+
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.nav-avatar{
+
+    width:40px;
+
+    height:40px;
+
+    object-fit:cover;
+
+    border:2px solid #555;
+
+    border-radius:3px;
+
+    flex-shrink:0;
+
+}
+
+/* =========================
+   USERNAME
+========================= */
+
+.nav-profile span{
+
+    flex:1;
+
+    color:#cfcfcf;
+
+    font-family:"Silkscreen";
+
+    font-size:13px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+.nav-profile:hover span{
+
+    color:#fff;
+
+}
+
+/* =========================
+   DROPDOWN ARROW
+========================= */
+
+.nav-profile::after{
+
+    content:"▼";
+
+    color:#888;
+
+    font-size:10px;
+
+    margin-left:6px;
+
+    transition:.2s;
+
+}
+
+.nav-profile:hover::after{
+
+    color:#ff4040;
+
+    transform:translateY(1px);
+
+}
+
+/* =========================
+   NAV PROFILE
+========================= */
+
+.nav-profile{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    min-width:210px;
+    max-width:240px;
+    height:56px;
+
+    padding:0 14px;
+
+    background:linear-gradient(180deg,#262626,#1a1a1a);
+
+    border:2px solid #505050;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.08),
+        inset 0 -1px rgba(0,0,0,.6);
+
+    transition:.2s;
+
+    cursor:pointer;
+
+}
+
+.nav-profile:hover{
+
+    border-color:#ff4040;
+
+    background:linear-gradient(180deg,#2d2d2d,#202020);
+
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.nav-avatar{
+
+    width:42px;
+    height:42px;
+
+    border:2px solid #555;
+
+    border-radius:2px;
+
+    object-fit:cover;
+
+    flex-shrink:0;
+
+}
+
+/* =========================
+   NAME
+========================= */
+
+.nav-profile span{
+
+    flex:1;
+
+    color:#d6d6d6;
+
+    font-family:"Silkscreen";
+
+    font-size:12px;
+
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.nav-profile:hover span{
+
+    color:#fff;
+
+}
+
+/* =========================
+   ARROW
+========================= */
+
+.nav-profile::after{
+
+    content:"▾";
+
+    color:#8f8f8f;
+
+    font-size:13px;
+
+    transition:.2s;
+
+}
+
+.nav-profile:hover::after{
+
+    color:#ff4040;
+
+    transform:rotate(180deg);
+
+}
+
+.navbar{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 34px;
+
+    background:linear-gradient(180deg,#252525,#171717);
+
+    border:3px solid #5b5b5b;
+
+    box-shadow:
+        inset 0 2px rgba(255,255,255,.08),
+        inset 0 -2px rgba(0,0,0,.6),
+        0 8px 25px rgba(0,0,0,.45);
+
+    position:relative;
+
+}
+
+.logo{
+
+    flex-shrink:0;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:55px;
+
+    margin-left:140px;
+
+}
+
+#nav-auth{
+
+    margin-left:auto;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.nav-profile{
+
+    min-width:180px;
+
+    max-width:200px;
+
+}

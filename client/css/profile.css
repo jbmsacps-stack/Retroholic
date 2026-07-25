@@ -1,0 +1,322 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.profile-hero{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    width:92%;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    background:#171717;
+
+    border:2px solid #4d4d4d;
+
+    box-shadow:
+        inset 0 0 0 2px #242424;
+
+}
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.profile-avatar{
+
+    width:180px;
+
+    height:180px;
+
+    background:#1f1f1f;
+
+    border:3px solid #555;
+
+    padding:8px;
+
+}
+
+.profile-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* =========================================
+   INFO
+========================================= */
+
+.profile-info{
+
+    flex:1;
+
+}
+
+.profile-info h1{
+
+    font-family:"Press Start 2P";
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+#profile-username{
+
+    color:#ff4040;
+
+    font-size:26px;
+
+    margin-bottom:14px;
+
+}
+
+#profile-bio{
+
+    color:#cfcfcf;
+
+    font-size:28px;
+
+    line-height:1.4;
+
+    max-width:900px;
+
+    margin-bottom:18px;
+
+}
+
+#joined-date{
+
+    color:#888;
+
+    font-size:24px;
+
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.stats-grid{
+
+    width:92%;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.stat-card{
+
+    background:#1a1a1a;
+
+    border:2px solid #4b4b4b;
+
+    padding:28px;
+
+    text-align:center;
+
+    transition:.2s;
+
+}
+
+.stat-card:hover{
+
+    border-color:#ff4040;
+
+}
+
+.stat-card h2{
+
+    font-family:"Press Start 2P";
+
+    font-size:30px;
+
+    margin-bottom:14px;
+
+}
+
+.stat-card span{
+
+    color:#bfbfbf;
+
+    font-size:24px;
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.profile-actions{
+
+    width:92%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.action-btn{
+
+    flex:1;
+
+    height:58px;
+
+    background:#1d1d1d;
+
+    border:2px solid #555;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-family:"Silkscreen";
+
+}
+
+.action-btn:hover{
+
+    border-color:#ff4040;
+
+    background:#252525;
+
+}
+
+/* =========================================
+   GAMES
+========================================= */
+
+.my-games{
+
+    width:92%;
+
+    margin:0 auto 50px;
+
+}
+
+.section-title{
+
+    font-family:"Press Start 2P";
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
+}
+
+.games-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+
+    gap:22px;
+
+}
+
+.empty-games{
+
+    grid-column:1/-1;
+
+    background:#171717;
+
+    border:2px dashed #444;
+
+    padding:70px 30px;
+
+    text-align:center;
+
+}
+
+.empty-icon{
+
+    font-size:64px;
+
+    margin-bottom:20px;
+
+}
+
+.empty-games h2{
+
+    font-family:"Press Start 2P";
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+}
+
+.empty-games p{
+
+    font-size:28px;
+
+    color:#aaa;
+
+    margin-bottom:25px;
+
+}
+
+.upload-first{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:240px;
+
+    height:52px;
+
+    background:#202020;
+
+    border:2px solid #555;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-family:"Silkscreen";
+
+    transition:.2s;
+
+}
+
+.upload-first:hover{
+
+    border-color:#ff4040;
+
+    background:#2b2b2b;
+
+}

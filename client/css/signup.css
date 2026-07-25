@@ -1,0 +1,439 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"VT323", monospace;
+
+    background:#090909;
+
+    color:#fff;
+
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.signup-page{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+    background:
+    radial-gradient(circle at center,#181818 0%,#090909 75%);
+
+}
+
+.background::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    repeating-linear-gradient(
+
+        transparent 0px,
+
+        transparent 3px,
+
+        rgba(255,255,255,.03) 4px
+
+    );
+
+    opacity:.35;
+
+    animation:scan 8s linear infinite;
+
+}
+
+@keyframes scan{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(8px);
+
+    }
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.signup-container{
+
+    width:680px;
+
+    max-width:94vw;
+
+    background:#111;
+
+    border:2px solid #444;
+
+    box-shadow:
+        inset 0 0 0 2px #1f1f1f,
+        0 0 35px rgba(0,0,0,.55);
+
+    padding:38px;
+
+    text-align:center;
+
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+}
+
+.logo span{
+
+    color:#ff4040;
+
+    font-size:22px;
+
+}
+
+.logo h1{
+
+    font-family:"Press Start 2P";
+
+    font-size:24px;
+
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle{
+
+    margin-bottom:22px;
+
+    font-size:30px;
+
+    color:#cfcfcf;
+
+}
+
+/* =========================
+   CLERK
+========================= */
+
+#clerk-sign-up{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* =========================
+   CLERK OVERRIDES
+========================= */
+
+.cl-rootBox{
+
+    width:100%!important;
+
+    display:flex!important;
+
+    justify-content:center!important;
+
+}
+
+.cl-card{
+
+    width:520px!important;
+
+    max-width:100%!important;
+
+    background:#181818!important;
+
+    border:2px solid #444!important;
+
+    border-radius:0!important;
+
+    box-shadow:none!important;
+
+    padding:24px!important;
+
+}
+
+.cl-headerTitle{
+
+    font-family:"Press Start 2P"!important;
+
+    font-size:18px!important;
+
+    color:#fff!important;
+
+}
+
+.cl-headerSubtitle{
+
+    font-family:"VT323"!important;
+
+    font-size:24px!important;
+
+    color:#d0d0d0!important;
+
+}
+
+.cl-socialButtonsBlockButton{
+
+    background:#202020!important;
+
+    border:2px solid #444!important;
+
+    border-radius:0!important;
+
+}
+
+.cl-socialButtonsBlockButton *{
+
+    color:#fff!important;
+
+}
+
+.cl-formFieldLabel{
+
+    color:#fff!important;
+
+    font-family:"VT323"!important;
+
+    font-size:24px!important;
+
+}
+
+.cl-formFieldInput{
+
+    background:#111!important;
+
+    color:#fff!important;
+
+    border:2px solid #555!important;
+
+    border-radius:0!important;
+
+    height:52px!important;
+
+    font-size:18px!important;
+
+}
+
+.cl-formButtonPrimary{
+
+    background:#ff4040!important;
+
+    color:#fff!important;
+
+    border:none!important;
+
+    border-radius:0!important;
+
+    height:54px!important;
+
+    font-family:"Silkscreen"!important;
+
+    font-size:13px!important;
+
+}
+
+.cl-footer{
+
+    background:transparent!important;
+
+}
+
+.cl-footerActionText{
+
+    color:#bbb!important;
+
+}
+
+.cl-footerActionLink{
+
+    color:#ff4040!important;
+
+}
+
+.cl-footerActionLink:hover{
+
+    color:#fff!important;
+
+}
+
+.cl-dividerLine{
+
+    background:#444!important;
+
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin:20px 0 12px;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#333;
+
+}
+
+.divider span{
+
+    color:#777;
+
+    font-size:22px;
+
+}
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-link{
+
+    color:#ff4040;
+
+    text-decoration:none;
+
+    font-family:"Silkscreen";
+
+    font-size:14px;
+
+    transition:.2s;
+
+}
+
+.login-link:hover{
+
+    color:#fff;
+
+    text-shadow:0 0 8px #ff4040;
+
+}
+
+/* ===== INPUT PLACEHOLDER ===== */
+
+.cl-formFieldInput::placeholder{
+
+    color:#9d9d9d!important;
+
+    opacity:1!important;
+
+    font-family:"VT323"!important;
+
+    font-size:22px!important;
+
+    letter-spacing:.5px;
+
+}
+
+.cl-formFieldInput{
+
+    color:#ffffff!important;
+
+    font-size:22px!important;
+
+    font-family:"VT323"!important;
+
+}
+
+/* Focus */
+
+.cl-formFieldInput:focus{
+
+    border-color:#ff4040!important;
+
+    box-shadow:
+        0 0 0 1px #ff4040 inset,
+        0 0 12px rgba(255,64,64,.35)!important;
+
+}
+
+/* Labels */
+
+.cl-formFieldLabel{
+
+    color:#f0f0f0!important;
+
+    font-family:"Silkscreen"!important;
+
+    font-size:13px!important;
+
+    margin-bottom:8px!important;
+
+    letter-spacing:1px;
+
+}
+
