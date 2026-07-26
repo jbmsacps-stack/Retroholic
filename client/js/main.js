@@ -49,6 +49,7 @@ if (grid && typeof games !== "undefined") {
 }
 
 import clerk from "./auth.js";
+const role = clerk.user?.publicMetadata?.role;
 
 const nav = document.getElementById("nav-auth");
 
@@ -57,16 +58,57 @@ if (nav) {
     if (clerk.user) {
 
         nav.innerHTML = `
-        <div class="nav-profile">
+<div class="nav-profile">
 
-            <img src="${clerk.user.imageUrl}" class="nav-avatar">
+    <img src="${clerk.user.imageUrl}" class="nav-avatar">
 
-            <span>${clerk.user.username || clerk.user.firstName || "PLAYER"}</span>
+    <span>${clerk.user.username || clerk.user.firstName || "PLAYER"}</span>
 
-        </div>
-    `;
+    <div class="profile-dropdown">
 
-        nav.querySelector(".nav-profile").addEventListener("click", async () => {
+        <a href="#" id="profile-link">
+
+    👤Profile
+
+</a>
+
+        <a href="/creator-dashboard.html">
+
+            🎮 Creator
+
+        </a>
+
+        ${role === "creator"
+                ? `
+            <a href="dashboard.html">
+
+                🛠 Admin
+
+            </a>
+            `
+                : ""
+            }
+
+        <button id="logout-dropdown">
+
+            🚪 Logout
+
+        </button>
+
+    </div>
+
+</div>
+`;
+
+        const profile = nav.querySelector(".nav-profile");
+
+        document.getElementById("profile-link").addEventListener("click", async (e) => {
+
+            e.preventDefault();
+
+            e.stopPropagation();
+
+            profile.classList.remove("open");
 
             const { data } = await supabase
 
@@ -90,6 +132,32 @@ if (nav) {
 
         });
 
+        profile.addEventListener("click", (e) => {
+
+            e.stopPropagation();
+
+            profile.classList.toggle("open");
+
+        });
+
+        document.addEventListener("click", () => {
+
+            profile.classList.remove("open");
+
+        });
+
+        document
+            .getElementById("logout-dropdown")
+            .addEventListener("click", async (e) => {
+
+                e.stopPropagation();
+
+                await clerk.signOut();
+
+                window.location.href = "/";
+
+            });
+
     } else {
 
         nav.innerHTML = `
@@ -101,5 +169,23 @@ if (nav) {
     `;
 
     }
+
+}
+
+const logout = document.getElementById("logout-dropdown");
+
+if (logout) {
+
+    logout.addEventListener("mouseenter", () => {
+
+        document.body.classList.add("logout-hover");
+
+    });
+
+    logout.addEventListener("mouseleave", () => {
+
+        document.body.classList.remove("logout-hover");
+
+    });
 
 }

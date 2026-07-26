@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic | Admin Dashboard</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="stylesheet"
+          href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span>■</span>
+
+        RETROHOLIC ADMIN
+
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="/">HOME</a>
+
+        <a href="#">DASHBOARD</a>
+
+        <a href="#">CREATORS</a>
+
+        <a href="#">GAMES</a>
+
+    </nav>
+
+    <div id="nav-auth"></div>
+
+</header>
+
+<main class="admin-page">
+
+<div class="admin-header">
+
+<h1>
+
+CONTROL CENTER
+
+</h1>
+
+<p>
+
+Monitor creators, games and platform activity.
+
+</p>
+
+</div>
+
+<!-- ========================================= -->
+
+<section class="stats-grid">
+
+<div class="stat-card">
+
+<h2 id="pending-creators">
+
+0
+
+</h2>
+
+<span>
+
+PENDING CREATORS
+
+</span>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="pending-games">
+
+0
+
+</h2>
+
+<span>
+
+PENDING GAMES
+
+</span>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="published-games">
+
+0
+
+</h2>
+
+<span>
+
+PUBLISHED GAMES
+
+</span>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="total-users">
+
+0
+
+</h2>
+
+<span>
+
+REGISTERED USERS
+
+</span>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+
+<div class="dashboard-grid">
+
+<section class="panel">
+
+<h2>
+
+PENDING CREATOR APPLICATIONS
+
+</h2>
+
+<div id="creator-list"></div>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+PENDING GAME UPLOADS
+
+</h2>
+
+<div id="game-list">
+
+<div class="empty">
+
+No pending uploads.
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- ========================================= -->
+
+<section class="quick-actions">
+
+<h2>
+
+QUICK ACTIONS
+
+</h2>
+
+<div class="action-grid">
+
+<a href="creator-review.html"
+class="action-card">
+
+Review Creators
+
+</a>
+
+<a href="game-review.html"
+class="action-card">
+
+Review Games
+
+</a>
+
+<a href="#"
+class="action-card">
+
+Platform Statistics
+
+</a>
+
+<a href="/"
+class="action-card">
+
+Back To Website
+
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script type="module"
+src="../js/main.js"></script>
+
+<script type="module"
+src="/js/dashboard.js"></script>
+
+</body>
+
+</html>

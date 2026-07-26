@@ -1358,3 +1358,501 @@ gap:40px;
     max-width:200px;
 
 }
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    height:84px;
+
+    padding:0 42px;
+
+}
+
+/* Center the navigation better */
+
+.nav-links{
+
+    margin:0 auto;
+
+    gap:75px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    font-size:18px;
+
+}
+
+/* Navigation links */
+
+.nav-links a{
+
+    font-size:17px;
+
+    letter-spacing:1px;
+
+}
+
+/* Profile */
+
+#nav-auth{
+
+    margin-left:0;
+
+}
+
+.nav-profile{
+
+    width:220px;
+
+    height:60px;
+
+}
+
+/* Give the navbar a little breathing room */
+
+.app{
+
+    padding:22px;
+
+}
+
+.profile-dropdown{
+
+    position:absolute;
+
+    top:70px;
+
+    right:0;
+
+    width:260px;
+
+    background:#171717;
+
+    border:2px solid #555;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    display:none;
+
+    z-index:999;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.45),
+        inset 0 0 0 2px #262626;
+
+    animation:dropdown .18s ease;
+
+}
+
+.nav-profile.open .profile-dropdown{
+
+    display:block;
+
+}
+
+.profile-dropdown a,
+.profile-dropdown button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:100%;
+
+    padding:16px 20px;
+
+    background:none;
+
+    border:none;
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    font-family:"VT323";
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover{
+
+    background:#252525;
+
+    color:#ff4040;
+
+    padding-left:28px;
+
+}
+
+@keyframes dropdown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Logout */
+
+#logout-dropdown{
+
+    transition:.25s;
+
+}
+
+/* Hover */
+
+#logout-dropdown:hover{
+
+    color:#ff4040;
+
+    background:#2a1111;
+
+    border-left:4px solid #ff4040;
+
+    animation:logout-shake .25s infinite;
+
+}
+
+@keyframes logout-shake{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    25%{
+
+        transform:translateX(-2px);
+
+    }
+
+    50%{
+
+        transform:translateX(2px);
+
+    }
+
+    75%{
+
+        transform:translateX(-2px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+body.logout-hover{
+
+    animation:cry .35s infinite;
+
+    filter:saturate(.9);
+
+}
+
+@keyframes cry{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    25%{
+
+        transform:translateX(-1px);
+
+    }
+
+    50%{
+
+        transform:translateX(1px);
+
+    }
+
+    75%{
+
+        transform:translateX(-1px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* =========================================
+   RETRO DROPDOWN
+========================================= */
+
+.profile-dropdown{
+
+    width:215px;
+
+    top:78px;
+
+    right:36px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        #252525,
+
+        #181818
+
+    );
+
+    border:2px solid #555;
+
+    border-radius:0;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 20px 40px rgba(0,0,0,.6),
+
+        inset 0 0 0 2px #2d2d2d;
+
+    animation:dropdown-open .18s ease;
+
+}
+
+/* little pointer */
+
+.profile-dropdown::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-9px;
+
+    right:34px;
+
+    width:14px;
+
+    height:14px;
+
+    background:#252525;
+
+    border-left:2px solid #555;
+
+    border-top:2px solid #555;
+
+    transform:rotate(45deg);
+
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.profile-dropdown a,
+.profile-dropdown button{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:100%;
+
+    min-height:68px;
+
+    padding:0 22px;
+
+    background:none;
+
+    border:none;
+
+    color:#d8d8d8;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+    font-family:"VT323";
+
+    transition:.18s;
+
+}
+
+/* divider */
+
+.profile-dropdown a:not(:last-child),
+.profile-dropdown button{
+
+    border-top:1px solid #2c2c2c;
+
+}
+
+/* hover */
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover{
+
+    background:#2a2a2a;
+
+    color:#fff;
+
+    padding-left:30px;
+
+}
+
+/* animated red bar */
+
+.profile-dropdown a::before,
+.profile-dropdown button::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0;
+
+    height:100%;
+
+    background:#ff4040;
+
+    transition:.18s;
+
+}
+
+.profile-dropdown a:hover::before,
+.profile-dropdown button:hover::before{
+
+    width:5px;
+
+}
+
+/* right arrow */
+
+.profile-dropdown a::after{
+
+    content:"▶";
+
+    margin-left:auto;
+
+    opacity:0;
+
+    transition:.18s;
+
+    font-size:15px;
+
+}
+
+.profile-dropdown a:hover::after{
+
+    opacity:1;
+
+    transform:translateX(5px);
+
+}
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+#logout-dropdown{
+
+    color:#d8d8d8;
+
+}
+
+#logout-dropdown:hover{
+
+    color:#ff6060;
+
+    background:#311818;
+
+}
+
+/* =========================================
+   USER BUTTON
+========================================= */
+
+.nav-profile{
+
+    transition:.2s;
+
+}
+
+.nav-profile.open{
+
+    background:#242424;
+
+    border-color:#ff4040;
+
+}
+
+/* =========================================
+   OPEN
+========================================= */
+
+@keyframes dropdown-open{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-12px) scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+

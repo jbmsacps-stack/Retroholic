@@ -5,19 +5,26 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Retroholic | Profile</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+          rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="css/style.css">
 
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet"
+          href="css/profile.css">
 
 </head>
 
@@ -25,187 +32,311 @@
 
 <div class="app">
 
-    <!-- ================= NAVBAR ================= -->
+<header class="navbar">
 
-    <header class="navbar">
+    <div class="logo">
 
-        <div class="logo">
+        <span>■</span>
 
-            <span>■</span>
+        RETROHOLIC
 
-            RETROHOLIC
+    </div>
 
-        </div>
+    <nav class="nav-links">
 
-        <nav class="nav-links">
+        <a href="index.html">HOME</a>
 
-            <a href="index.html">HOME</a>
+        <a href="#">GAMES</a>
 
-            <a href="#">GAMES</a>
+        <a href="#">ABOUT</a>
 
-            <a href="#">TOP SCORE</a>
+        <a href="donate.html">DONATE</a>
 
-            <a href="#">ABOUT</a>
+    </nav>
 
-            <a href="#">CONTACT</a>
+    <div id="nav-auth"></div>
 
-        </nav>
+</header>
 
-        <div id="nav-auth"></div>
+<!-- ========================================= -->
+<!-- HERO -->
+<!-- ========================================= -->
 
-    </header>
+<section class="profile-hero">
 
-    <!-- ================= PROFILE HERO ================= -->
+    <div class="profile-avatar">
 
-    <section class="profile-hero">
+        <img id="profile-avatar">
 
-        <div class="profile-avatar">
+    </div>
 
-            <img id="profile-avatar">
+    <div class="profile-info">
 
-        </div>
+        <h1 id="profile-name">
 
-        <div class="profile-info">
+            PLAYER
 
-            <h1 id="profile-name">
+        </h1>
 
-                PLAYER
+        <p id="profile-username">
 
-            </h1>
+            @username
 
-            <p id="profile-username">
+        </p>
 
-                @username
+        <p id="profile-bio">
+
+            No bio yet.
+
+        </p>
+
+        <span id="joined-date">
+
+            Joined Retroholic
+
+        </span>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PLAYER STATS -->
+<!-- ========================================= -->
+
+<section class="stats-grid">
+
+    <div class="stat-card">
+
+        <h2 id="games-played">0</h2>
+
+        <span>GAMES PLAYED</span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="achievements-count">0</h2>
+
+        <span>ACHIEVEMENTS</span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="downloads-count">0</h2>
+
+        <span>DOWNLOADS</span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="favorites-count">0</h2>
+
+        <span>FAVORITES</span>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PLAYER LIBRARY -->
+<!-- ========================================= -->
+
+<section class="library-section">
+
+    <h2 class="section-title">
+
+        MY LIBRARY
+
+    </h2>
+
+    <div class="library-grid">
+
+        <div class="library-card">
+
+            <h3>
+
+                Recently Played
+
+            </h3>
+
+            <p>
+
+                No games yet.
 
             </p>
 
-            <p id="profile-bio">
+        </div>
 
-                No bio yet.
+        <div class="library-card">
+
+            <h3>
+
+                Favorites
+
+            </h3>
+
+            <p>
+
+                No favorites yet.
 
             </p>
 
-            <span id="joined-date">
+        </div>
 
-                Joined Retroholic
+        <div class="library-card">
 
-            </span>
+            <h3>
+
+                Wishlist
+
+            </h3>
+
+            <p>
+
+                Nothing here yet.
+
+            </p>
 
         </div>
 
-    </section>
+        <div class="library-card">
 
-    <!-- ================= STATS ================= -->
+            <h3>
 
-    <section class="stats-grid">
+                Collections
 
-        <div class="stat-card">
+            </h3>
 
-            <h2 id="games-count">0</h2>
+            <p>
 
-            <span>UPLOADS</span>
+                Create your first collection.
 
-        </div>
-
-        <div class="stat-card">
-
-            <h2 id="downloads-count">0</h2>
-
-            <span>DOWNLOADS</span>
+            </p>
 
         </div>
 
-        <div class="stat-card">
+    </div>
 
-            <h2 id="likes-count">0</h2>
+</section>
 
-            <span>LIKES</span>
+<!-- ========================================= -->
+<!-- CREATOR CARD -->
+<!-- ========================================= -->
 
-        </div>
+<section class="creator-card">
 
-        <div class="stat-card">
+    <h2>
 
-            <h2 id="followers-count">0</h2>
+        CREATOR PROGRAM
 
-            <span>FOLLOWERS</span>
+    </h2>
 
-        </div>
+    <p id="creator-description">
 
-    </section>
+        Become a verified creator and publish your own games on Retroholic.
 
-    <!-- ================= ACTIONS ================= -->
+    </p>
 
-    <section class="profile-actions">
+    <button
+        id="creator-btn"
+        class="action-btn">
 
-        <a href="upload.html" class="action-btn">
+        BECOME A CREATOR
 
-            UPLOAD GAME
+    </button>
 
-        </a>
+</section>
 
-        <a href="profile-setup.html" class="action-btn">
+<!-- ========================================= -->
+<!-- MY GAMES -->
+<!-- Hidden unless approved -->
+<!-- ========================================= -->
 
-            EDIT PROFILE
+<section
+    id="my-games-section"
+    class="my-games"
+    style="display:none;">
 
-        </a>
+    <div class="section-title">
 
-        <button class="action-btn" id="logout-btn">
+        MY GAMES
 
-            LOGOUT
+    </div>
 
-        </button>
+    <div
+        id="games-grid"
+        class="games-grid">
 
-    </section>
+        <div class="empty-games">
 
-    <!-- ================= MY GAMES ================= -->
+            <div class="empty-icon">
 
-    <section class="my-games">
-
-        <div class="section-title">
-
-            MY GAMES
-
-        </div>
-
-        <div id="games-grid" class="games-grid">
-
-            <div class="empty-games">
-
-                <div class="empty-icon">
-
-                    🎮
-
-                </div>
-
-                <h2>
-
-                    No Games Yet
-
-                </h2>
-
-                <p>
-
-                    Upload your first game and start building your collection.
-
-                </p>
-
-                <a href="upload.html" class="upload-first">
-
-                    UPLOAD FIRST GAME
-
-                </a>
+                🎮
 
             </div>
 
+            <h2>
+
+                No Games Yet
+
+            </h2>
+
+            <p>
+
+                Upload your first game to start building your creator portfolio.
+
+            </p>
+
+            <a
+                href="upload.html"
+                class="upload-first">
+
+                UPLOAD FIRST GAME
+
+            </a>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PROFILE ACTIONS -->
+<!-- ========================================= -->
+
+<section class="profile-actions">
+
+    <a
+        href="profile-setup.html"
+        class="action-btn">
+
+        EDIT PROFILE
+
+    </a>
+
+    <button
+        id="logout-btn"
+        class="action-btn">
+
+        LOGOUT
+
+    </button>
+
+</section>
 
 </div>
 
-<script type="module" src="js/main.js"></script>
+<script
+type="module"
+src="js/main.js"></script>
 
-<script type="module" src="js/profile.js"></script>
+<script
+type="module"
+src="js/profile.js"></script>
 
 </body>
 

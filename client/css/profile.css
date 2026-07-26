@@ -320,3 +320,115 @@
     background:#2b2b2b;
 
 }
+
+/* =========================================
+   CREATOR CARD
+========================================= */
+
+.creator-card{
+
+    width:92%;
+
+    margin:0 auto 30px;
+
+    background:#171717;
+
+    border:2px solid #4b4b4b;
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+.creator-card h2{
+
+    font-family:"Press Start 2P";
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
+}
+
+#creator-description{
+
+    font-size:28px;
+
+    color:#cfcfcf;
+
+    line-height:1.5;
+
+    max-width:800px;
+
+    margin:0 auto 30px;
+
+}
+
+#creator-btn{
+
+    width:280px;
+
+    height:56px;
+
+}
+
+/* =========================================
+   LIBRARY
+========================================= */
+
+.library-section{
+
+    width:92%;
+
+    margin:40px auto;
+
+}
+
+.library-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.library-card{
+
+    background:#171717;
+
+    border:2px solid #4b4b4b;
+
+    padding:28px;
+
+    transition:.2s;
+
+}
+
+.library-card:hover{
+
+    border-color:#ff4040;
+
+}
+
+.library-card h3{
+
+    font-family:"Press Start 2P";
+
+    font-size:16px;
+
+    margin-bottom:18px;
+
+}
+
+.library-card p{
+
+    color:#a9a9a9;
+
+    font-size:24px;
+
+    line-height:1.4;
+
+}
