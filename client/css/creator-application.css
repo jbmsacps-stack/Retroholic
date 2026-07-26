@@ -1,0 +1,696 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#090909;
+
+    color:#fff;
+
+    font-family:"VT323", monospace;
+
+}
+
+/* =========================================
+   PAGE
+========================================= */
+
+.creator-page{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:50px 20px 80px;
+
+}
+
+.creator-window{
+
+    position:relative;
+
+    width:1100px;
+
+    max-width:100%;
+
+    background:#171717;
+
+    border:3px solid #505050;
+
+    box-shadow:
+        inset 0 0 0 2px #2a2a2a,
+        0 25px 60px rgba(0,0,0,.55);
+
+    overflow:hidden;
+
+}
+
+/* =========================================
+   CRT EFFECT
+========================================= */
+
+.creator-window::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.22;
+
+    background:
+    repeating-linear-gradient(
+
+        transparent 0px,
+
+        transparent 3px,
+
+        rgba(255,255,255,.03) 4px
+
+    );
+
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.creator-header{
+
+    padding:40px;
+
+    background:#202020;
+
+    border-bottom:2px solid #444;
+
+}
+
+.creator-header h1{
+
+    font-family:"Press Start 2P";
+
+    font-size:24px;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+.creator-header p{
+
+    font-size:28px;
+
+    color:#bfbfbf;
+
+    line-height:1.4;
+
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+#creator-form{
+
+    padding:40px;
+
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.application-section{
+
+    margin-bottom:40px;
+
+    padding:30px;
+
+    background:#1b1b1b;
+
+    border:2px solid #3d3d3d;
+
+}
+
+.application-section h2{
+
+    font-family:"Silkscreen";
+
+    color:#ff4040;
+
+    margin-bottom:30px;
+
+    font-size:20px;
+
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-preview{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+#player-avatar{
+
+    width:90px;
+
+    height:90px;
+
+    border:3px solid #666;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+#player-name{
+
+    font-size:34px;
+
+}
+
+#player-email{
+
+    font-size:24px;
+
+    color:#aaa;
+
+}
+
+/* =========================================
+   ROW
+========================================= */
+
+.row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+/* =========================================
+   FIELDS
+========================================= */
+
+.field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.field label{
+
+    font-size:28px;
+
+    color:#ddd;
+
+}
+
+.field input,
+.field textarea,
+.field select{
+
+    width:100%;
+
+    background:#111;
+
+    color:#fff;
+
+    border:2px solid #555;
+
+    font-family:"VT323";
+
+    font-size:28px;
+
+    padding:15px 18px;
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+.field textarea{
+
+    resize:vertical;
+
+    min-height:170px;
+
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+
+    border-color:#ff4040;
+
+    box-shadow:0 0 15px rgba(255,64,64,.25);
+
+}
+
+::placeholder{
+
+    color:#666;
+
+}
+
+/* =========================================
+   PUBLISH TYPES
+========================================= */
+
+.publish-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+.publish-grid button{
+
+    height:58px;
+
+    background:#1a1a1a;
+
+    border:2px solid #555;
+
+    color:#ddd;
+
+    cursor:pointer;
+
+    font-family:"Silkscreen";
+
+    transition:.2s;
+
+}
+
+.publish-grid button:hover{
+
+    border-color:#ff4040;
+
+    transform:translateY(-2px);
+
+}
+
+.publish-grid button.active{
+
+    background:#ff4040;
+
+    border-color:#ff4040;
+
+    color:#fff;
+
+    box-shadow:0 0 20px rgba(255,64,64,.35);
+
+}
+
+/* =========================================
+   RADIO
+========================================= */
+
+.radio-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.radio-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:26px;
+
+}
+
+.radio-group input{
+
+    accent-color:#ff4040;
+
+}
+
+/* =========================================
+   GUIDELINES
+========================================= */
+
+.guidelines-toggle{
+
+    width:100%;
+
+    height:60px;
+
+    background:#202020;
+
+    border:2px solid #555;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    padding:0 20px;
+
+    font-family:"Silkscreen";
+
+    transition:.2s;
+
+}
+
+.guidelines-toggle:hover{
+
+    border-color:#ff4040;
+
+}
+
+.guidelines-content{
+
+    display:none;
+
+    margin-top:20px;
+
+    padding:25px;
+
+    background:#111;
+
+    border:2px solid #444;
+
+}
+
+.guidelines-content.open{
+
+    display:block;
+
+}
+
+/* =========================================
+   CAPTCHA
+========================================= */
+
+.captcha-box{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:2px dashed #555;
+
+    background:#111;
+
+    color:#999;
+
+    font-size:24px;
+
+}
+
+/* =========================================
+   AGREEMENT
+========================================= */
+
+.agreement{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    font-size:26px;
+
+    line-height:1.4;
+
+}
+
+.agreement input{
+
+    margin-top:6px;
+
+    accent-color:#ff4040;
+
+}
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.submit-area{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+#submit-application{
+
+    width:380px;
+
+    height:65px;
+
+    background:#1d1d1d;
+
+    border:2px solid #666;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-family:"Silkscreen";
+
+    transition:.2s;
+
+}
+
+#submit-application:hover{
+
+    background:#ff4040;
+
+    border-color:#ff4040;
+
+    box-shadow:0 0 20px rgba(255,64,64,.35);
+
+}
+
+#submit-application:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-message{
+
+    display:none;
+
+    color:#ff6060;
+
+    font-size:22px;
+
+}
+
+.field.error input,
+.field.error textarea,
+.field.error select{
+
+    border-color:#ff4040;
+
+}
+
+.field.error .error-message{
+
+    display:block;
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:950px){
+
+    .row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .publish-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:650px){
+
+    .creator-header h1{
+
+        font-size:18px;
+
+    }
+
+    .creator-header p{
+
+        font-size:22px;
+
+    }
+
+    .publish-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile-preview{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    #submit-application{
+
+        width:100%;
+
+    }
+
+}
+
+.publish-grid.error{
+
+    border:2px solid #ff4040;
+
+    padding:15px;
+
+    animation:shake .25s;
+
+}
+
+@keyframes shake{
+
+    0%{transform:translateX(0);}
+
+    20%{transform:translateX(-6px);}
+
+    40%{transform:translateX(6px);}
+
+    60%{transform:translateX(-5px);}
+
+    80%{transform:translateX(5px);}
+
+    100%{transform:translateX(0);}
+
+}
+
+.guideline{
+
+    padding:22px 0;
+
+    border-bottom:1px solid #303030;
+
+}
+
+.guideline:last-child{
+
+    border-bottom:none;
+
+}
+
+.guideline h3{
+
+    color:#ff4040;
+
+    font-family:"Silkscreen";
+
+    font-size:18px;
+
+    margin-bottom:12px;
+
+}
+
+.guideline p{
+
+    font-size:24px;
+
+    line-height:1.5;
+
+    color:#d6d6d6;
+
+}
+
+.guideline ul{
+
+    margin-left:25px;
+
+    margin-top:10px;
+
+}
+
+.guideline li{
+
+    font-size:24px;
+
+    margin:8px 0;
+
+    color:#d6d6d6;
+
+}

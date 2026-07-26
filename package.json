@@ -1,0 +1,19 @@
+{
+  "name": "retroholic",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "@clerk/clerk-js": "^6.25.8",
+    "@clerk/ui": "^1.26.0",
+    "@supabase/supabase-js": "^2.110.8"
+  }
+}

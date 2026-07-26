@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="UTF-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Retroholic | Creator Program</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+            rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+
+      <link rel="stylesheet" href="css/creator-application.css">
+
+</head>
+
+<body>
+
+      <div class="app">
+
+            <header class="navbar">
+
+                  <div class="logo">
+
+                        <span>■</span>
+
+                        RETROHOLIC
+
+                  </div>
+
+                  <nav class="nav-links">
+
+                        <a href="index.html">HOME</a>
+
+                        <a href="#">GAMES</a>
+
+                        <a href="#">TOP SCORE</a>
+
+                        <a href="#">ABOUT</a>
+
+                        <a href="#">CONTACT</a>
+
+                  </nav>
+
+                  <div id="nav-auth"></div>
+
+            </header>
+
+            <main class="creator-page">
+
+                  <div class="creator-window">
+
+                        <div class="creator-header">
+
+                              <h1>
+
+                                    RETROHOLIC CREATOR PROGRAM
+
+                              </h1>
+
+                              <p>
+
+                                    Apply to become a verified Retroholic Creator and publish your games.
+
+                                    Applications are reviewed manually within 24–72 hours.
+
+                              </p>
+
+                        </div>
+
+                        <form id="creator-form">
+
+                              <!-- ====================================== -->
+                              <!-- APPLICANT -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          APPLICANT INFORMATION
+
+                                    </h2>
+
+                                    <div class="profile-preview">
+
+                                          <img id="player-avatar">
+
+                                          <div>
+
+                                                <h3 id="player-name"></h3>
+
+                                                <p id="player-email"></p>
+
+                                          </div>
+
+                                    </div>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                PUBLIC CREATOR NAME
+
+                                          </label>
+
+                                          <input id="creator-name" type="text" maxlength="40">
+
+                                          <small class="error-message"></small>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                          <div class="field">
+
+                                                <label>
+
+                                                      COUNTRY
+
+                                                </label>
+
+                                                <select id="country">
+
+                                                      <option value="">Select Country</option>
+
+                                                </select>
+
+                                          </div>
+
+                                          <div class="field">
+
+                                                <label>
+
+                                                      AGE GROUP
+
+                                                </label>
+
+                                                <select id="age-group">
+
+                                                      <option value="">Select</option>
+
+                                                      <option>Under 16</option>
+
+                                                      <option>16 - 17</option>
+
+                                                      <option>18+</option>
+
+                                                </select>
+
+                                          </div>
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- CREATOR -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          CREATOR PROFILE
+
+                                    </h2>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                WHAT BEST DESCRIBES YOU?
+
+                                          </label>
+
+                                          <select id="creator-type">
+
+                                                <option value="">Select</option>
+
+                                                <option>Solo Indie Developer</option>
+
+                                                <option>Student Developer</option>
+
+                                                <option>Small Team</option>
+
+                                                <option>Studio</option>
+
+                                                <option>Game Jam Creator</option>
+
+                                                <option>Open Source Developer</option>
+
+                                                <option>Hobbyist</option>
+
+                                                <option>Other</option>
+
+                                          </select>
+
+                                    </div>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                TELL US ABOUT YOURSELF
+
+                                          </label>
+
+                                          <textarea id="about-creator" maxlength="800"
+                                                placeholder="Introduce yourself and tell us about the games you create..."></textarea>
+
+                                          <small class="error-message"></small>
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- PUBLISHING -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          WHAT DO YOU PLAN TO PUBLISH?
+
+                                    </h2>
+
+                                    <div class="publish-grid">
+
+                                          <button type="button">Finished Games</button>
+
+                                          <button type="button">Early Access</button>
+
+                                          <button type="button">Game Jam Projects</button>
+
+                                          <button type="button">Demos</button>
+
+                                          <button type="button">Pixel Art Games</button>
+
+                                          <button type="button">Retro Games</button>
+
+                                          <button type="button">Educational Games</button>
+
+                                          <button type="button">Experimental Projects</button>
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- EXPERIENCE -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          DEVELOPMENT EXPERIENCE
+
+                                    </h2>
+
+                                    <div class="radio-group">
+
+                                          <label>
+
+                                                <input type="radio" name="experience" value="First Game">
+
+                                                This will be my first published game.
+
+                                          </label>
+
+                                          <label>
+
+                                                <input type="radio" name="experience" value="Published Before">
+
+                                                I've published games before.
+
+                                          </label>
+
+                                          <label>
+
+                                                <input type="radio" name="experience" value="Team">
+
+                                                I develop games with a team.
+
+                                          </label>
+
+                                          <label>
+
+                                                <input type="radio" name="experience" value="Studio">
+
+                                                I represent a studio.
+
+                                          </label>
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- LINKS -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          OPTIONAL LINKS
+
+                                    </h2>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                WEBSITE
+
+                                          </label>
+
+                                          <input id="website" type="url">
+
+                                    </div>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                GITHUB
+
+                                          </label>
+
+                                          <input id="github" type="url">
+
+                                    </div>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                ITCH.IO
+
+                                          </label>
+
+                                          <input id="itch-io" type="url">
+
+                                    </div>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                STEAM
+
+                                          </label>
+
+                                          <input id="steam" type="url">
+
+                                    </div>
+
+                                    <div class="field">
+
+                                          <label>
+
+                                                YOUTUBE CHANNEL
+
+                                          </label>
+
+                                          <input id="youtube" type="url">
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- GUIDELINES -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          CREATOR GUIDELINES
+
+                                    </h2>
+
+                                    <button type="button" id="toggle-guidelines" class="guidelines-toggle">
+
+                                          ▶ READ CREATOR GUIDELINES
+
+                                    </button>
+
+                                    <div id="guidelines-content" class="guidelines-content">
+
+                                          <div class="guideline">
+
+                                                <h3>1. OWNERSHIP</h3>
+
+                                                <p>
+
+                                                      You may only upload games that you created yourself or that you
+                                                      have explicit permission to distribute.
+
+                                                </p>
+
+                                          </div>
+
+                                          <div class="guideline">
+
+                                                <h3>2. COPYRIGHT</h3>
+
+                                                <p>
+
+                                                      Do not upload copyrighted games, music, artwork, fonts, or other
+                                                      assets unless you own the rights or have permission to use them.
+
+                                                </p>
+
+                                          </div>
+
+                                          <div class="guideline">
+
+                                                <h3>3. MALWARE & SECURITY</h3>
+
+                                                <p>
+
+                                                      Games must not contain malware, spyware, crypto miners,
+                                                      ransomware, or any software intended to harm users or their
+                                                      devices.
+
+                                                </p>
+
+                                          </div>
+
+                                          <div class="guideline">
+
+                                                <h3>4. CONTENT POLICY</h3>
+
+                                                <p>
+
+                                                      Do not publish illegal content, hate speech, explicit adult
+                                                      material, or content intended to harass or deceive other users.
+
+                                                </p>
+
+                                          </div>
+
+                                          <div class="guideline">
+
+                                                <h3>5. QUALITY STANDARDS</h3>
+
+                                                <p>
+
+                                                      Games should launch correctly, match their description, and
+                                                      provide a genuine playable experience.
+
+                                                </p>
+
+                                          </div>
+
+                                          <div class="guideline">
+
+                                                <h3>6. WHAT WE ENCOURAGE</h3>
+
+                                                <ul>
+
+                                                      <li>✓ Indie Games</li>
+
+                                                      <li>✓ Student Projects</li>
+
+                                                      <li>✓ Retro-style Games</li>
+
+                                                      <li>✓ Game Jam Entries</li>
+
+                                                      <li>✓ Open Source Games</li>
+
+                                                      <li>✓ Experimental Projects</li>
+
+                                                </ul>
+
+                                          </div>
+
+                                          <div class="guideline">
+
+                                                <h3>7. MODERATION</h3>
+
+                                                <p>
+
+                                                      Retroholic reviews every creator application. We may reject or
+                                                      remove games that violate these guidelines or negatively affect
+                                                      the community.
+
+                                                </p>
+
+                                          </div>
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- SECURITY -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          SECURITY VERIFICATION
+
+                                    </h2>
+
+                                    <div class="captcha-box">
+
+                                          Cloudflare Turnstile will appear here.
+
+                                    </div>
+
+                              </section>
+
+                              <!-- ====================================== -->
+                              <!-- AGREEMENT -->
+                              <!-- ====================================== -->
+
+                              <section class="application-section">
+
+                                    <h2>
+
+                                          FINAL AGREEMENT
+
+                                    </h2>
+
+                                    <label class="agreement">
+
+                                          <input id="agreement" type="checkbox">
+
+                                          I confirm that all information provided is accurate and that I have permission
+                                          to publish any games submitted to Retroholic.
+
+                                    </label>
+
+                              </section>
+
+                              <div class="submit-area">
+
+                                    <button type="submit" id="submit-application">
+
+                                          SUBMIT APPLICATION
+
+                                    </button>
+
+                              </div>
+
+                        </form>
+
+                  </div>
+
+            </main>
+
+      </div>
+
+      <script type="module" src="js/main.js"></script>
+
+      <script type="module" src="js/creator-application.js"></script>
+
+</body>
+
+</html>
