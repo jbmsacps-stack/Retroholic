@@ -1,29 +1,56 @@
 import { supabase } from "./supabase-config.js";
 const grid = document.getElementById("gameGrid");
 
-if (grid && typeof games !== "undefined") {
+async function loadGames() {
 
-    games.forEach(game => {
+    const { data, error } = await supabase
+
+        .from("games")
+
+        .select("*")
+
+        .eq("status", "approved")
+
+        .order("created_at", { ascending: false });
+
+    if (error) {
+
+        console.error(error);
+
+        return;
+
+    }
+
+    grid.innerHTML = "";
+
+    data.forEach(game => {
 
         grid.innerHTML += `
 
-        <div class="game-card">
+        <div class="game-card" data-id="${game.id}">
 
             <div class="slot">
+
                 <img src="assets/cartridges/slot.svg">
+
             </div>
 
             <div class="cartridge">
 
-                <img class="label" src="${game.image}">
+                <img class="label"
+
+                     src="${game.cartridge_image}">
 
                 <img class="frame"
-                    src="assets/cartridges/retroholic-frame.svg">
+
+                     src="assets/cartridges/retroholic-frame.svg">
 
             </div>
 
             <div class="pcb">
+
                 <img src="assets/cartridges/pcb.svg">
+
             </div>
 
             <div class="game-info">
@@ -32,9 +59,9 @@ if (grid && typeof games !== "undefined") {
 
                 <p>
 
-                    ${game.genre}<br>
+                    ${game.category || "Unknown"}<br>
 
-                    ${game.year}
+                    ${new Date(game.created_at).getFullYear()}
 
                 </p>
 
@@ -45,6 +72,12 @@ if (grid && typeof games !== "undefined") {
         `;
 
     });
+
+}
+
+if (grid){
+
+    loadGames();
 
 }
 

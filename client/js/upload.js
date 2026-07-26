@@ -706,23 +706,23 @@ async function publishGame() {
 
                 title: uploadData.title,
 
-                slug,
+                slug: slug,
 
-                short_description: uploadData.shortDescription,
+                description: uploadData.shortDescription,
 
-                genre: uploadData.genre,
+                category: uploadData.genre,
 
                 version: uploadData.version,
 
-                visibility: uploadData.visibility,
-
                 cartridge_image: labelUrl,
 
-                banner_image: bannerUrl,
+                banner: bannerUrl,
+
+                game_file: zipUrl,
 
                 screenshots: screenshotUrls,
 
-                game_file: zipUrl
+                status: "pending"
 
             });
 
@@ -1202,7 +1202,7 @@ async function uploadFile(file, bucket) {
 
 }
 
-function createSlug(title){
+function createSlug(title) {
 
     return title
 
@@ -1210,8 +1210,8 @@ function createSlug(title){
 
         .trim()
 
-        .replace(/[^a-z0-9]+/g,"-")
+        .replace(/[^a-z0-9]+/g, "-")
 
-        .replace(/^-|-$/g,"");
+        .replace(/^-|-$/g, "");
 
 }

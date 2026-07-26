@@ -25,6 +25,8 @@ async function loadCounts() {
 
         creators,
 
+        games,
+
         users
 
     ] = await Promise.all([
@@ -45,6 +47,20 @@ async function loadCounts() {
 
         supabase
 
+            .from("games")
+
+            .select("*", {
+
+                count: "exact",
+
+                head: true
+
+            })
+
+            .eq("status", "pending"),
+
+        supabase
+
             .from("profiles")
 
             .select("*", {
@@ -60,6 +76,10 @@ async function loadCounts() {
     document.getElementById("pending-creators").textContent =
 
         creators.count || 0;
+
+    document.getElementById("pending-games").textContent =
+
+        games.count || 0;
 
     document.getElementById("total-users").textContent =
 
@@ -179,5 +199,101 @@ document.addEventListener("click", e => {
 
     window.location.href =
         `/creator-review.html?id=${id}`;
+
+});
+
+async function loadPendingGames() {
+
+    const { data, error } = await supabase
+
+        .from("games")
+
+        .select("*")
+
+        .eq("status", "pending")
+
+        .order("created_at", {
+
+            ascending: false
+
+        })
+
+        .limit(5);
+
+    if (error) {
+
+        console.error(error);
+
+        return;
+
+    }
+
+    const list = document.getElementById("game-list");
+
+    list.innerHTML = "";
+
+    if (!data.length) {
+
+        list.innerHTML = `
+
+            <div class="empty">
+
+                No pending game uploads.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+    data.forEach(game => {
+
+        list.innerHTML += `
+
+        <div class="creator-card">
+
+            <img
+                src="${game.cartridge_image || "/assets/default-game.png"}"
+                class="creator-avatar">
+
+            <div class="creator-info">
+
+                <h3>${game.title}</h3>
+
+                <p>${game.category || game.genre || "Unknown"}</p>
+
+                <small>${game.version}</small>
+
+            </div>
+
+            <button
+    class="game-review-btn"
+    data-id="${game.id}">
+
+    REVIEW →
+
+</button>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+loadPendingGames();
+
+document.addEventListener("click", e => {
+
+    const button = e.target.closest(".game-review-btn");
+
+    if (!button) return;
+
+    window.location.href =
+
+        `/game-review.html?id=${button.dataset.id}`;
 
 });

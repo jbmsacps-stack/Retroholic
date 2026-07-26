@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic | Game Review</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="stylesheet"
+          href="../css/game-review.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span>■</span>
+
+        RETROHOLIC ADMIN
+
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="/dashboard.html">
+
+            DASHBOARD
+
+        </a>
+
+        <a href="/">
+
+            WEBSITE
+
+        </a>
+
+    </nav>
+
+    <div id="nav-auth"></div>
+
+</header>
+
+<main class="review-page">
+
+    <a href="/dashboard.html" class="back-btn">
+
+        ← Back to Dashboard
+
+    </a>
+
+    <section class="game-header">
+
+        <img id="game-label"
+             class="game-label">
+
+        <div class="game-info">
+
+            <h1 id="game-title">
+
+                Loading...
+
+            </h1>
+
+            <span id="game-status"
+                  class="status pending">
+
+                PENDING
+
+            </span>
+
+            <p id="game-meta">
+
+                Genre • Version • Visibility
+
+            </p>
+
+            <p id="game-owner">
+
+                Creator
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="review-section">
+
+        <h2>
+
+            Banner
+
+        </h2>
+
+        <img id="game-banner"
+             class="game-banner">
+
+    </section>
+
+    <section class="review-section">
+
+        <h2>
+
+            Description
+
+        </h2>
+
+        <p id="game-description"></p>
+
+    </section>
+
+    <section class="review-section">
+
+        <h2>
+
+            Screenshots
+
+        </h2>
+
+        <div id="screenshots"
+             class="screenshots-grid"></div>
+
+    </section>
+
+    <section class="review-section">
+
+        <h2>
+
+            Submitted Game
+
+        </h2>
+
+        <a id="download-game"
+           class="download-btn"
+           target="_blank">
+
+            Download ZIP
+
+        </a>
+
+    </section>
+
+    <section class="review-section">
+
+        <h2>
+
+            Moderation
+
+        </h2>
+
+        <textarea
+            id="rejection-reason"
+            placeholder="Reason for rejection (optional)..."></textarea>
+
+        <div class="review-actions">
+
+            <button id="approve-btn">
+
+                APPROVE
+
+            </button>
+
+            <button id="reject-btn">
+
+                REJECT
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+</div>
+
+<script type="module"
+        src="../js/main.js"></script>
+
+<script type="module"
+        src="../js/game-review.js"></script>
+
+</body>
+
+</html>
