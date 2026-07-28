@@ -22,7 +22,6 @@ export default defineConfig({
                 "profile-setup": resolve(__dirname, "client/profile-setup.html"),
                 "creator-application": resolve(__dirname, "client/creator-application.html"),
                 "creator-dashboard": resolve(__dirname, "client/creator-dashboard.html"),
-                "creator-status": resolve(__dirname, "client/creator-status.html"),
                 dashboard: resolve(__dirname, "client/dashboard.html"),
                 "creator-review": resolve(__dirname, "client/creator-review.html"),
                 "game-review": resolve(__dirname, "client/game-review.html"),
