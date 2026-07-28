@@ -1,0 +1,543 @@
+/* ==========================================================
+   GAME PAGE
+========================================================== */
+
+.game-page {
+
+    width: min(1300px, 95%);
+    margin: 40px auto 80px;
+
+}
+
+.back-button {
+
+    display: inline-block;
+    margin-bottom: 25px;
+    color: var(--gold);
+    text-decoration: none;
+    font-family: "Press Start 2P", monospace;
+    font-size: .7rem;
+    transition: .25s;
+
+}
+
+.back-button:hover {
+
+    color: #fff;
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero {
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 2px solid var(--gold);
+
+    background: #111;
+
+    margin-bottom: 45px;
+
+}
+
+.hero-banner {
+
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 35px;
+
+    background:
+
+    linear-gradient(
+
+        transparent 40%,
+
+        rgba(0,0,0,.88)
+
+    );
+
+}
+
+.hero-overlay h1{
+
+    font-size:2rem;
+    margin:10px 0;
+
+}
+
+.hero-overlay p{
+
+    opacity:.8;
+
+}
+
+/* ==========================================================
+   VERIFIED
+========================================================== */
+
+.verified-badge{
+
+    width:max-content;
+
+    background:var(--gold);
+
+    color:#111;
+
+    padding:8px 16px;
+
+    border-radius:40px;
+
+    font-family:"Press Start 2P";
+
+    font-size:.55rem;
+
+}
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+.game-main{
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:40px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================================
+   CARTRIDGE
+========================================================== */
+
+.cartridge-display{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.cartridge{
+
+    position:relative;
+
+    width:250px;
+
+    transition:.3s;
+
+}
+
+.cartridge:hover{
+
+    transform:
+
+    translateY(-8px)
+
+    rotate(-2deg);
+
+}
+
+.cartridge .label{
+
+    position:absolute;
+
+    left:58px;
+
+    /* top:86px; */
+
+    width:135px;
+
+    height:148px;
+
+    object-fit:cover;
+
+}
+
+.cartridge .frame{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================================
+   DOWNLOAD BUTTON
+========================================================== */
+
+.download-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:18px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:"Press Start 2P";
+
+    transition:.25s;
+
+}
+
+.download-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(212,175,55,.25);
+
+}
+
+/* ==========================================================
+   INFO CARDS
+========================================================== */
+
+.info-card{
+
+    background:#171717;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:16px;
+
+    padding:28px;
+
+    margin-bottom:30px;
+
+}
+
+.info-card h2{
+
+    margin-bottom:22px;
+
+    color:var(--gold);
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+   META GRID
+========================================================== */
+
+.meta-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.meta-grid span{
+
+    display:block;
+
+    color:#999;
+
+    font-size:.75rem;
+
+    margin-bottom:8px;
+
+}
+
+.meta-grid strong{
+
+    color:white;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+#game-description{
+
+    line-height:1.9;
+
+    color:#d5d5d5;
+
+}
+
+/* ==========================================================
+   SCREENSHOTS
+========================================================== */
+
+.screenshots-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.screenshots-grid img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    border:2px solid rgba(212,175,55,.2);
+
+    transition:.25s;
+
+}
+
+.screenshots-grid img:hover{
+
+    transform:scale(1.03);
+
+    border-color:var(--gold);
+
+}
+
+/* ==========================================================
+   CREATOR
+========================================================== */
+
+.creator-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.creator-card img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+/* ==========================================================
+   MORE GAMES
+========================================================== */
+
+.creator-games{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+.game-main{
+
+grid-template-columns:1fr;
+
+}
+
+.cartridge{
+
+margin:auto;
+
+}
+
+.hero-banner{
+
+height:260px;
+
+}
+
+.hero-overlay h1{
+
+font-size:1.5rem;
+
+}
+
+}
+
+/* ==========================================
+   GAME PAGE FIXES
+========================================== */
+
+/* Better spacing on the left */
+
+.left-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/* Download button */
+
+.download-btn{
+
+    display:block;
+
+    width:250px;
+
+    margin:30px auto 0;
+
+    padding:16px 20px;
+
+    background:#1b1b1b;
+
+    color:#ffffff;
+
+    border:2px solid #444;
+
+    font-family:"Press Start 2P", monospace;
+
+    font-size:.72rem;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.download-btn:hover{
+
+    background:#ff4d4d;
+
+    border-color:#ff4d4d;
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 18px rgba(255,77,77,.35);
+
+}
+
+/* Cards */
+
+.info-card{
+
+    background:#171717;
+
+    border:2px solid #2d2d2d;
+
+    border-radius:18px;
+
+}
+
+/* Remove the gold headings */
+
+.info-card h2{
+
+    color:#ffffff;
+
+    letter-spacing:1px;
+
+}
+
+/* Meta labels */
+
+.meta-grid span{
+
+    color:#7d7d7d;
+
+}
+
+/* Better spacing */
+
+.meta-grid{
+
+    gap:40px;
+
+}
+
+/* Description */
+
+#game-description{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    color:#d0d0d0;
+
+}
+
+/* Creator */
+
+.creator-card img{
+
+    border:2px solid #444;
+
+}
+
+/* Screenshot placeholders */
+
+.screenshots-grid{
+
+    min-height:180px;
+
+}
+
+/* Cartridge breathing room */
+
+.cartridge-display{
+
+    margin-top:10px;
+
+    margin-bottom:10px;
+
+}

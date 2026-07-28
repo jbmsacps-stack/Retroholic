@@ -73,13 +73,37 @@ async function loadGames() {
 
     });
 
+    grid.querySelectorAll(".game-card").forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            window.location.href =
+
+                `game.html?id=${card.dataset.id}`;
+
+        });
+
+    });
+
 }
 
-if (grid){
+if (grid) {
 
     loadGames();
 
 }
+
+grid?.addEventListener("click", (e) => {
+
+    const card = e.target.closest(".game-card");
+
+    if (!card) return;
+
+    window.location.href =
+
+        `game.html?id=${card.dataset.id}`;
+
+});
 
 import clerk from "./auth.js";
 const role = clerk.user?.publicMetadata?.role;

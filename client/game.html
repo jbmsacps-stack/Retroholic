@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retroholic | Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/game.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="navbar">
+
+            <div class="logo">
+
+                <span>■</span>
+
+                RETROHOLIC
+
+            </div>
+
+            <nav class="nav-links">
+
+                <a href="/">HOME</a>
+
+                <a href="#">GAMES</a>
+
+                <a href="#">ABOUT</a>
+
+                <a href="donate.html">DONATE</a>
+
+            </nav>
+
+            <div id="nav-auth"></div>
+
+        </header>
+
+        <main class="game-page">
+
+            <a href="/" class="back-button">
+
+                ← BACK TO LIBRARY
+
+            </a>
+
+            <!-- ================================= -->
+
+            <section class="hero">
+
+                <img id="game-banner" class="hero-banner">
+
+                <div class="hero-overlay">
+
+                    <span class="verified-badge">
+
+                        RETROHOLIC VERIFIED
+
+                    </span>
+
+                    <h1 id="game-title">
+
+                        Loading...
+
+                    </h1>
+
+                    <p id="game-creator">
+
+                        by Creator
+
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- ================================= -->
+
+            <section class="game-main">
+
+                <div class="left-column">
+
+                    <div class="cartridge-display">
+
+                        <div class="cartridge">
+
+                            <img id="game-label" class="label">
+
+                            <img class="frame" src="assets/cartridges/retroholic-frame.svg">
+
+                        </div>
+
+                    </div>
+
+                    <button id="download-btn" class="download-btn">
+
+                        ⬇ DOWNLOAD GAME
+
+                    </button>
+
+                </div>
+
+                <div class="right-column">
+
+                    <div class="info-card">
+
+                        <h2>
+
+                            GAME DETAILS
+
+                        </h2>
+
+                        <div>
+
+                            <span>
+
+                                VIEWS
+
+                            </span>
+
+                            <strong id="game-views">
+
+                                0
+
+                            </strong>
+
+                        </div>
+
+                        <div class="meta-grid">
+
+                            <div>
+
+                                <span>
+
+                                    CATEGORY
+
+                                </span>
+
+                                <strong id="game-category">
+
+                                    -
+
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+
+                                    VERSION
+
+                                </span>
+
+                                <strong id="game-version">
+
+                                    -
+
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+
+                                    UPLOADED
+
+                                </span>
+
+                                <strong id="game-date">
+
+                                    -
+
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+
+                                    DOWNLOADS
+
+                                </span>
+
+                                <strong id="game-downloads">
+
+                                    0
+
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h2>
+
+                            MISSION BRIEFING
+
+                        </h2>
+
+                        <p id="game-description">
+
+                            Loading...
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ================================= -->
+
+            <section class="info-card">
+
+                <h2>
+
+                    SCREENSHOTS
+
+                </h2>
+
+                <div id="screenshots-grid" class="screenshots-grid">
+
+                </div>
+
+            </section>
+
+            <!-- ================================= -->
+
+            <section class="info-card">
+
+                <h2>
+
+                    DEVELOPER
+
+                </h2>
+
+                <div class="creator-card">
+
+                    <img id="creator-avatar" src="assets/default-avatar.png">
+
+                    <div>
+
+                        <h3 id="creator-name">
+
+                            Loading...
+
+                        </h3>
+
+                        <p id="creator-bio">
+
+                            Independent Retroholic Creator
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ================================= -->
+
+            <section class="info-card">
+
+                <h2>
+
+                    MORE FROM THIS CREATOR
+
+                </h2>
+
+                <div id="creator-games" class="creator-games">
+
+                    <!-- JS -->
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+    <script type="module" src="js/game.js"></script>
+
+</body>
+
+</html>
